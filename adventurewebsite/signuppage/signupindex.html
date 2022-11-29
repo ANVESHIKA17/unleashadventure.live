@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin-signup</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="signin.php" class="sign-in-form" method="post">
+                <h2 class="title">sign-in</h2>
+                 <div class="input-field">
+                    <i class="fas fa-user "></i>
+                    <input type="text" name="uname" placeholder="Username" >
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock "></i>
+    <input type="password"  name="pwd" placeholder="Password">
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <p class="social-text">or sign in with</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/index.php" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://accounts.google.com/" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form action="signup.php" class="sign-up-form" method="post">
+                <h2 class="title">sign-up</h2>
+                 <div class="input-field">
+                    <i class="fas fa-user "></i>
+                    <input type="text" id="username" placeholder="Username" name ="uname">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope "></i>
+                    <input type="text" id="email" placeholder="Email" name="eml">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock "></i>
+                    <input type="password" id="password" placeholder="Password" name="pwd">
+                </div>
+                <input type="submit" id="signup" value="sign up" class="btn">
+                <p class="social-text">or sign up with</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/index.php" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://accounts.google.com/" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already an account? <a href="#" id="sign-in-btn2">Sign in </a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Already signed-up?</h3>
+                    <p>Let's Explore Together</p>
+                    <button class="btn" id="sign-in-btn">Sign In</button>
+                </div>
+                <img src="../signupimg1.png" alt="sign-in" class="image">
+         </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>New Here?</h3>
+                        <p>Let's Explore Together</p>
+                        <button class="btn" id="sign-up-btn">Sign Up</button>
+                </div>
+                <img src="../sigupimg2.png" alt="sign-up" class="image">
+            </div>
+     </div>
+</div> 
+     <script src="app.js"></script>
+</body>
+</html>

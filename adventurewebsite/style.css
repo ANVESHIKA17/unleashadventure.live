@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+    text-align: center;
+    background-image: url(./signuppage/orderbck.jpg);
+}
+.h{
+text-align: center;
+margin-top: 13%;
+}
+form{
+    display: inline-block;
+}
